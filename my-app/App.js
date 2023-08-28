@@ -1,29 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { TextInput, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useState } from 'react';
 export default function App() {
   
-
-  const [name,setName] =useState('Juhaied');
-  const [age,setAge] = useState(23);
+  const [people,setPeople] = useState([
+    {name : 'Juhaied' , key : '1'},
+    {name : 'Hossen' , key : '2'},
+    {name : 'Nabid' , key : '3'},
+    {name : 'Abid' , key : '4'},
+    {name : 'Ador' , key : '5'},
+    {name : 'Toufique' , key : '6'},
+    {name : 'Rayhan' , key : '7'},
+    {name : 'R' , key : '8'},
+    {name : 'Kan' , key : '9'},
+  ])
   
   return (
     <View style={styles.container}>
-      <Text>Enter Your Name:</Text>
-      <TextInput 
-      //multiline       --> it is used for multiline inputs Ex: like i want to describe a product
-      style={styles.input}
-      placeholder='e.g. Nabid'
-      onChangeText={(val) => setName(val)} />
-
-      <Text>Enter Age:</Text>
-      <TextInput 
-      keyboardType='numeric'
-      style={styles.input}
-      placeholder='e.g. 12'
-      onChangeText={(val) => setAge(val)} />
-
-      <Text>Name is {name} and age is {age}</Text>
+      <ScrollView>
+        {people.map((item) =>{
+          return(
+          <Text style={styles.item} key={item.key}>{item.name}</Text>
+        )
+        })}
+      </ScrollView>
     </View>
   );
 }
@@ -31,16 +31,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop:40,
+    paddingHorizontal:20,
     backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
+   // alignItems: 'center',
+   // justifyContent: 'center',
   },
-  input :{
-    borderWidth:1,
-    borderColor: 'red',
-    padding:8,
-    margin:10,
-    width:200,
+  item :{
+    marginTop:24,
+    padding:30,
+    backgroundColor:'pink',
+    fontSize:24,
   }
+ 
   
 });
