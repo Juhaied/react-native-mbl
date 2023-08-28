@@ -1,21 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { TextInput, StyleSheet, Text, View } from 'react-native';
 import { useState } from 'react';
 export default function App() {
   
 
   const [name,setName] =useState('Juhaied');
-  const [person,setPerson] = useState({name : 'Juhaied Hossen',age:24});
-  const clickHandler = () =>{
-    setName('Nabid');
-  }
+  const [age,setAge] = useState(23);
+  
   return (
     <View style={styles.container}>
-      <Text>My Name is {name}</Text>
-      <Text>His name is {person.name} and he is {person.age} years old</Text>
-      <View style={styles.buttonContainer}>
-        <Button title='Update Name' onPress={clickHandler}/>
-      </View>
+      <Text>Enter Name:</Text>
+      <TextInput 
+      //multiline       --> it is used for multiline inputs Ex: like i want to describe a product
+      style={styles.input}
+      placeholder='e.g. Nabid'
+      onChangeText={(val) => setName(val)} />
+
+      <Text>Enter Age:</Text>
+      <TextInput 
+      keyboardType='numeric'
+      style={styles.input}
+      placeholder='e.g. 12'
+      onChangeText={(val) => setAge(val)} />
+
+      <Text>Name is {name} and age is {age}</Text>
     </View>
   );
 }
@@ -27,20 +35,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  header:{
-    backgroundColor :'pink',
-    padding : 20,
-  },
-  boldText:{
-    fontWeight: 'bold',
-  },
-  body:{
-    backgroundColor:'yellow',
-    padding:20,
-  },
-  buttonContainer :{
-    marginTop:30,
-    backgroundColor:'black'
+  input :{
+    borderWidth:1,
+    borderColor: 'red',
+    padding:8,
+    margin:10,
+    width:200,
   }
   
 });
