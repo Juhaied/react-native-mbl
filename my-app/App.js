@@ -9,7 +9,7 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Text>Enter Name:</Text>
+      <Text>Enter Your Name:</Text>
       <TextInput 
       //multiline       --> it is used for multiline inputs Ex: like i want to describe a product
       style={styles.input}
