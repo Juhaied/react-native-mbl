@@ -4,6 +4,9 @@ import { useState } from 'react';
 import Header from './components/Header';
 import TodoItem from './components/TodoItem';
 import AddTodo from './components/AddTodo';
+import Practice from './components/Practice';
+import HeaderComponent from './components/HeaderComponent';
+import OptionComponent from './components/OptionComponent';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -30,21 +33,7 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      {/* Header */}
-      <Header />
-      <View style={styles.content}>
-
-        {/* to do form */}
-        <AddTodo submitHandler={submitHandler} />
-        <View style={styles.list}>
-          <FlatList 
-          data={todos}
-          renderItem={({item}) =>(
-            <TodoItem item={item} pressHandler={pressHandler} />
-           )}
-          />
-        </View>
-      </View>
+      <OptionComponent />
     </View>
   );
 }
