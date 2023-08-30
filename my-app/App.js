@@ -2,6 +2,8 @@
 import { FlatList, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { useState } from 'react';
 import Header from './components/Header';
+import TodoItem from './components/TodoItem';
+import AddTodo from './components/AddTodo';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -9,6 +11,21 @@ export default function App() {
     {text: ' create an app' , key:'2'},
     {text: ' play coc' , key:'3'},
   ]);
+
+  const pressHandler = (key) =>{
+    setTodos((prevTodos) =>{
+      return prevTodos.filter(todo =>todo.key != key)
+    })
+  }
+
+  const submitHandler = (text) =>{
+    setTodos((prevTodos)=>{
+      return[
+        {text:text, key : Math.random().toString()},
+        ...prevTodos
+      ]
+    })
+  }
   
   
   return (
@@ -18,11 +35,12 @@ export default function App() {
       <View style={styles.content}>
 
         {/* to do form */}
+        <AddTodo submitHandler={submitHandler} />
         <View style={styles.list}>
           <FlatList 
           data={todos}
           renderItem={({item}) =>(
-            <Text>{item.text}</Text>
+            <TodoItem item={item} pressHandler={pressHandler} />
            )}
           />
         </View>
