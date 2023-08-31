@@ -10,10 +10,7 @@ export default function Practice(){
             <TextInput style={styles.input} placeholder="State" placeholderTextColor="#999" />
             <TextInput style={styles.input} placeholder="Phone/E-mail" placeholderTextColor="#999" />
           </View>
-          <View style={styles.container}>
-            <Text style={styles.header}>Select Service</Text>
-            <View style={styles.line} />
-          </View>
+          
         </View>
       );
 }

@@ -88,9 +88,10 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     borderRadius: 8,
     alignItems: 'center',
+    backgroundColor: '#f0f0f0', // Initial color for unselected options
   },
   selectedOption: {
-    backgroundColor: '#f0f0f0',
+    backgroundColor: 'green', // Color for selected option
   },
   optionText: {
     fontSize: 16,
