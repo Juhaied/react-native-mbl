@@ -18,7 +18,7 @@ const OptionComponent = () => {
           style={[
             styles.option,
             selectedOption === 'option1' && styles.selectedOption,
-            { backgroundColor: 'green' }, // Color for option 1
+            { backgroundColor: 'lightgreen' }, // Color for option 1
           ]}
           onPress={() => handleOptionSelect('option1')}
         >
@@ -29,7 +29,7 @@ const OptionComponent = () => {
           style={[
             styles.option,
             selectedOption === 'option2' && styles.selectedOption,
-            { backgroundColor: 'blue' }, // Color for option 2
+            { backgroundColor: 'lightblue' }, // Color for option 2
           ]}
           onPress={() => handleOptionSelect('option2')}
         >
@@ -86,9 +86,11 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   option: {
-    width: '40%',
-    padding: 10,
-    borderWidth: 1,
+    textAlign:'center',
+    width: '50%',
+    height:70,
+    padding: 20,
+    borderWidth: 2,
     borderColor: '#ccc',
     borderRadius: 8,
     alignItems: 'center',
