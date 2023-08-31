@@ -17,6 +17,7 @@ const OptionComponent = () => {
         <TouchableOpacity
           style={[
             styles.option,
+            backgroundColor='red',
             selectedOption === 'option1' && styles.selectedOption,
           ]}
           onPress={() => handleOptionSelect('option1')}
@@ -88,11 +89,8 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     borderRadius: 8,
     alignItems: 'center',
-    backgroundColor: '#f0f0f0', // Initial color for unselected options
   },
-  selectedOption: {
-    backgroundColor: 'green', // Color for selected option
-  },
+  
   optionText: {
     fontSize: 16,
   },
