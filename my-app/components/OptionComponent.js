@@ -22,7 +22,7 @@ const OptionComponent = () => {
           ]}
           onPress={() => handleOptionSelect('option1')}
         >
-          <Text style={styles.optionText}>Option 1</Text>
+          <Text style={styles.optionText}>Office Cleaning</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -33,7 +33,7 @@ const OptionComponent = () => {
           ]}
           onPress={() => handleOptionSelect('option2')}
         >
-          <Text style={styles.optionText}>Option 2</Text>
+          <Text style={styles.optionText}>Home cleaning</Text>
         </TouchableOpacity>
       </View>
 
@@ -46,7 +46,7 @@ const OptionComponent = () => {
           ]}
           onPress={() => handleOptionSelect('option3')}
         >
-          <Text style={styles.optionText}>Option 3</Text>
+          <Text style={styles.optionText}>General cleaning</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -57,7 +57,7 @@ const OptionComponent = () => {
           ]}
           onPress={() => handleOptionSelect('option4')}
         >
-          <Text style={styles.optionText}>Option 4</Text>
+          <Text style={styles.optionText}>Deep cleaning</Text>
         </TouchableOpacity>
       </View>
     </View>
