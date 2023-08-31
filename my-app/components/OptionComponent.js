@@ -17,8 +17,8 @@ const OptionComponent = () => {
         <TouchableOpacity
           style={[
             styles.option,
-            backgroundColor='red',
             selectedOption === 'option1' && styles.selectedOption,
+            { backgroundColor: 'green' }, // Color for option 1
           ]}
           onPress={() => handleOptionSelect('option1')}
         >
@@ -29,6 +29,7 @@ const OptionComponent = () => {
           style={[
             styles.option,
             selectedOption === 'option2' && styles.selectedOption,
+            { backgroundColor: 'blue' }, // Color for option 2
           ]}
           onPress={() => handleOptionSelect('option2')}
         >
@@ -41,6 +42,7 @@ const OptionComponent = () => {
           style={[
             styles.option,
             selectedOption === 'option3' && styles.selectedOption,
+            { backgroundColor: 'yellow' }, // Color for option 3
           ]}
           onPress={() => handleOptionSelect('option3')}
         >
@@ -51,6 +53,7 @@ const OptionComponent = () => {
           style={[
             styles.option,
             selectedOption === 'option4' && styles.selectedOption,
+            { backgroundColor: 'orange' }, // Color for option 4
           ]}
           onPress={() => handleOptionSelect('option4')}
         >
@@ -90,7 +93,9 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
   },
-  
+  selectedOption: {
+    // Any styling for selected options
+  },
   optionText: {
     fontSize: 16,
   },
