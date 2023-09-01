@@ -40,7 +40,7 @@ export default function Practice2() {
           onChangeText={(text) => setContact(text)}
         />
       </View>
-      <View style={{ width: 20 }} />
+      
     </View>
   );
 }
