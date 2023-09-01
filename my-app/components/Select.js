@@ -3,12 +3,43 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function Select(){
-    return(
-        <View style={styles.container}>
-          <Text style={styles.title}>Select Gender</Text>          
-        </View>
-    )
-}
+    const [selectedGender, setSelectedGender] = useState(null);
+
+  const handleGenderSelect = (gender) => {
+    setSelectedGender(gender);
+  };
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.header}>Select Gender</Text>
+      <View style={styles.line} />
+
+      <View style={styles.genderContainer}>
+        <TouchableOpacity
+          style={[
+            styles.genderOption,
+            selectedGender === 'male' && styles.selectedGender,
+          ]}
+          onPress={() => handleGenderSelect('male')}
+        >
+            <Icon name="mars" size={30} color="blue" />
+          <Text style={styles.genderText}>Male</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={[
+            styles.genderOption,
+            selectedGender === 'female' && styles.selectedGender,
+          ]}
+          onPress={() => handleGenderSelect('female')}
+        >
+          <Icon name="venus" size={30} color="pink" />
+          <Text style={styles.genderText}>Female</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
     container: {
