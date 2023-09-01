@@ -8,6 +8,7 @@ import Practice from './components/Practice';
 import HeaderComponent from './components/HeaderComponent';
 import OptionComponent from './components/OptionComponent';
 import Select from './components/Select';
+import Practice2 from './components/Practice2';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -33,11 +34,13 @@ export default function App() {
   
   
   return (
+    <ScrollView>
       <View style={styles.container}>
-        <Practice />
+        <Practice2 />
         <OptionComponent />
         <Select />
       </View>
+    </ScrollView>
    
   );
 }
