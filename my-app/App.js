@@ -7,6 +7,7 @@ import AddTodo from './components/AddTodo';
 import Practice from './components/Practice';
 import HeaderComponent from './components/HeaderComponent';
 import OptionComponent from './components/OptionComponent';
+import Select from './components/Select';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -35,6 +36,7 @@ export default function App() {
     <View style={styles.container}>
       <Practice />
       <OptionComponent />
+      <Select />
     </View>
   );
 }
