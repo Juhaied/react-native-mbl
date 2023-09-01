@@ -25,10 +25,11 @@ export default function Select(){
               <Icon name="mars" size={30} color="blue" />
               <Text style={styles.genderText}>Male</Text>
             </TouchableOpacity>
+            <View style={styles.gap} />
             <TouchableOpacity
-          style={[
-            styles.genderBox,
-            selectedGender === 'female' && styles.selectedGender,
+              style={[
+              styles.genderBox,
+              selectedGender === 'female' && styles.selectedGender,
           ]}
           onPress={() => handleGenderSelect('female')}
         >
@@ -66,7 +67,11 @@ const styles = StyleSheet.create({
       borderWidth: 2,
       borderColor: '#ccc',
       borderRadius: 8,
-      padding: 10,
+      padding: 30,
+      
+    },
+    gap: {
+      width: 40, // Adjust the width to control the size of the gap
     },
     selectedGender: {
       borderColor: 'green', // Any styling for selected options

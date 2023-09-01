@@ -1,5 +1,5 @@
 
-import { FlatList, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { FlatList, StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
 import { useState } from 'react';
 import Header from './components/Header';
 import TodoItem from './components/TodoItem';
@@ -33,11 +33,12 @@ export default function App() {
   
   
   return (
-    <View style={styles.container}>
-      <Practice />
-      <OptionComponent />
-      <Select />
-    </View>
+      <View style={styles.container}>
+        <Practice />
+        <OptionComponent />
+        <Select />
+      </View>
+   
   );
 }
 
