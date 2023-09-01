@@ -9,6 +9,7 @@ import HeaderComponent from './components/HeaderComponent';
 import OptionComponent from './components/OptionComponent';
 import Select from './components/Select';
 import Practice2 from './components/Practice2';
+import Continue from './components/Continue';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -39,6 +40,7 @@ export default function App() {
         <Practice2 />
         <OptionComponent />
         <Select />
+        <Continue />
       </View>
     </ScrollView>
    
