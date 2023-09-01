@@ -12,8 +12,9 @@ const styles = StyleSheet.create({
       flex:1,
       width: 200, // Adjust the width as needed
       height: 50, // Adjust the height as needed
-      backgroundColor: '#007bff', // Background color
-      borderRadius: 8, // Rounded corners
+      marginLeft:100,
+      backgroundColor: '#40e0d0', // Background color
+      borderRadius: 28, // Rounded corners
       alignItems: 'center',
       justifyContent: 'center',
       alignContent:'center'
