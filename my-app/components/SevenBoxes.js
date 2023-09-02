@@ -13,16 +13,19 @@ const SevenBoxes = () => {
   };
 
   const renderBox = (boxNumber) => {
-    const boxBackgroundColor = isBoxSelected(boxNumber) ? 'green' : 'blue';
+    const boxBackgroundColor = isBoxSelected(boxNumber) ? '#00ffff' : '#f8f8ff';
 
     return (
-      <TouchableOpacity
-        key={boxNumber}
-        style={[styles.box, { backgroundColor: boxBackgroundColor }]}
-        onPress={() => handleBoxPress(boxNumber)}
-      >
-        <Text style={styles.boxText}>{boxNumber}</Text>
-      </TouchableOpacity>
+      <View>
+        
+        <TouchableOpacity
+          key={boxNumber}
+          style={[styles.box, { backgroundColor: boxBackgroundColor }]}
+          onPress={() => handleBoxPress(boxNumber)}
+        >
+          <Text style={styles.boxText}>{boxNumber}</Text>
+        </TouchableOpacity>
+      </View>
     );
   };
 
@@ -54,8 +57,9 @@ const styles = StyleSheet.create({
     borderRadius:10,
   },
   boxText: {
-    color: 'white', // Text color
-    fontSize: 18, // Text size (adjust as needed)
+    color: 'black', // Text color
+    fontSize: 28, // Text size (adjust as needed)
+    fontWeight:'bold',
   },
 });
 
