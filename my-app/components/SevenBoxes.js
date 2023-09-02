@@ -31,13 +31,13 @@ const SevenBoxes = () => {
 
   return (
     <View style={styles.container}>
-      {renderBox(1)}
       {renderBox(2)}
       {renderBox(3)}
       {renderBox(4)}
       {renderBox(5)}
       {renderBox(6)}
       {renderBox(7)}
+      {renderBox(8)}
     </View>
   );
 };
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     alignItems: 'center', // Center the boxes vertically (adjust as needed)
   },
   box: {
-    width: 50, // Set the width of each box (adjust as needed)
+    width: 40, // Set the width of each box (adjust as needed)
     height: 50, // Set the height of each box (adjust as needed)
     margin: 5, // Add some margin between the boxes (adjust as needed)
     justifyContent: 'center',
