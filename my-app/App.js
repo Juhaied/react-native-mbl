@@ -10,6 +10,7 @@ import OptionComponent from './components/OptionComponent';
 import Select from './components/Select';
 import Practice2 from './components/Practice2';
 import Continue from './components/Continue';
+import SevenBoxes from './components/SevenBoxes';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -37,10 +38,7 @@ export default function App() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Practice2 />
-        <OptionComponent />
-        <Select />
-        <Continue />
+        <SevenBoxes />
       </View>
     </ScrollView>
    
