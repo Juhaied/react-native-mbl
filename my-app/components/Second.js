@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const Second= () => {
+const Second= ({head,title}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Select hour</Text>
-      <Text style={styles.question}>How many hours do need?</Text>
+      <Text style={styles.header}>{head}</Text>
+      <Text style={styles.question}>{title}</Text>
     </View>
   );
 };
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   question: {
+    marginLeft:12,
     fontSize: 26,
     color: 'black', // Change the text color as desired
     marginTop: 10,

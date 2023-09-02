@@ -12,6 +12,7 @@ import Practice2 from './components/Practice2';
 import Continue from './components/Continue';
 import SevenBoxes from './components/SevenBoxes';
 import Second from './components/Second';
+import Person from './components/Person';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -39,8 +40,10 @@ export default function App() {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Second />
+        <Second head="Select Hour" title="How many hours do you need?" />
         <SevenBoxes />
+        <Second title="How many person do you need?" />
+        <Person />
       </View>
     </ScrollView>
    
