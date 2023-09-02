@@ -11,6 +11,7 @@ import Select from './components/Select';
 import Practice2 from './components/Practice2';
 import Continue from './components/Continue';
 import SevenBoxes from './components/SevenBoxes';
+import Second from './components/Second';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -38,6 +39,7 @@ export default function App() {
   return (
     <ScrollView>
       <View style={styles.container}>
+        <Second />
         <SevenBoxes />
       </View>
     </ScrollView>
