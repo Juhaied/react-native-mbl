@@ -45,28 +45,27 @@ const Person = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column', // Align rows in a column
-    alignItems: 'center', // Center rows horizontally
+    alignItems: 'flex-start', // Align rows from the left
   },
   row: {
     flexDirection: 'row', // Align boxes in a row
-    justifyContent: 'center', // Center the boxes horizontally
-    alignItems: 'center', // Center the boxes vertically (adjust as needed)
+    justifyContent: 'flex-start', // Align the boxes from the left
   },
   boxContainer: {
-    margin: 5, // Add some margin between the boxes (adjust as needed)
+    marginHorizontal: -10, // Adjust the horizontal margin between the boxes as needed
   },
   box: {
-    width: 50, // Set the width of each box (adjust as needed)
+    width: 40, // Set the width of each box (adjust as needed)
     height: 50, // Set the height of each box (adjust as needed)
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius:10,
-    marginLeft:30,
+    borderRadius: 10,
+    marginLeft: 40, // Adjust the margin between the boxes horizontally
   },
   boxText: {
     color: 'black', // Text color
     fontSize: 28, // Text size (adjust as needed)
-    fontWeight:'bold',
+    fontWeight: 'bold',
   },
   boxDescription: {
     marginTop: 5, // Add some margin between the box and the description
