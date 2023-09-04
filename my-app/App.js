@@ -13,6 +13,7 @@ import Continue from './components/Continue';
 import SevenBoxes from './components/SevenBoxes';
 import Second from './components/Second';
 import Person from './components/Person';
+import Language from './assets/Language';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -47,6 +48,7 @@ export default function App() {
         <View style={{ marginTop: -30 }}>
           <Second title="Select cleaner language" />
         </View>
+        <Language />
       </View>
     </ScrollView>
    
