@@ -44,6 +44,9 @@ export default function App() {
         <SevenBoxes />
         <Second title="How many person do you need?" />
         <Person />
+        <View style={{ marginTop: -30 }}>
+          <Second title="Select cleaner language" />
+        </View>
       </View>
     </ScrollView>
    
