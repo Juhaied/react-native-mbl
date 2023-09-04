@@ -18,16 +18,16 @@ const Material = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity
-        style={[styles.box, box1Selected && styles.selectedBox]}
+        style={[styles.box1, box1Selected && styles.selectedBox]}
         onPress={handleBox1Press}
       >
         <Text style={styles.boxText}>No, I have them</Text>
       </TouchableOpacity>
       
-      <View style={{ width: 1 }} />
+      
 
       <TouchableOpacity
-        style={[styles.box, box2Selected && styles.selectedBox]}
+        style={[styles.box2, box2Selected && styles.selectedBox]}
         onPress={handleBox2Press}
       >
         <Text style={styles.boxText}>Yes please</Text>
@@ -43,21 +43,32 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 20,
   },
-  box: {
+  box1: {
     width: 150, // Adjust the width as needed
-    height: 50,
+    height: 40,
     backgroundColor: 'lightgray',
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 5, // Add border radius for rounded corners
+    marginLeft:38,
+  },
+  box2: {
+    width: 150, // Adjust the width as needed
+    height: 40,
+    backgroundColor: 'lightgray',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5, // Add border radius for rounded corners
+    marginRight:38,
   },
   selectedBox: {
     backgroundColor: '#00ffff', // Change this color as desired
   },
+  
   boxText: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: 'black', // Text color
+    color: 'white', // Text color
   },
 });
 
