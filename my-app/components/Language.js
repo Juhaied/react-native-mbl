@@ -7,9 +7,9 @@ const Language = () => {
 
   const languageOptions = [
     'English',
-    'Spanish',
-    'French',
-    // Add more languages as needed
+    'Arabic',
+    'Hindi',
+   
   ];
 
   const handleLanguageChange = (language) => {
@@ -19,7 +19,7 @@ const Language = () => {
   return (
     <View style={styles.container}>
       <View style={styles.rowContainer}>
-        <Text style={styles.label}>Select Language:</Text>
+        <Text style={styles.label}>Language</Text>
         <Picker
           style={styles.picker}
           selectedValue={selectedLanguage}
@@ -30,7 +30,7 @@ const Language = () => {
           ))}
         </Picker>
       </View>
-      <Text style={styles.selectedLanguage}>Selected Language: {selectedLanguage}</Text>
+     
     </View>
   );
 };
@@ -47,8 +47,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   label: {
-    fontSize: 18,
-    marginRight: 10,
+    fontSize:22,
+    marginRight: -10,
   },
   picker: {
     width: '60%', // Adjust the width as needed
@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 5,
+    marginLeft:40,
   },
   selectedLanguage: {
     marginTop: 20,

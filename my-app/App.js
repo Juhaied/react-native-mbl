@@ -43,8 +43,10 @@ export default function App() {
       <View style={styles.container}>
         <Second head="Select Hour" title="How many hours do you need?" />
         <SevenBoxes />
-        <Second title="How many person do you need?" />
-        <Person />
+        <View style={{ marginTop: -30 }}>
+          <Second title="How many person do you need?" />
+          <Person />
+        </View>
         <View style={{ marginTop: -30 }}>
           <Second title="Select cleaner language" />
         </View>
