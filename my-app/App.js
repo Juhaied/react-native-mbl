@@ -13,7 +13,7 @@ import Continue from './components/Continue';
 import SevenBoxes from './components/SevenBoxes';
 import Second from './components/Second';
 import Person from './components/Person';
-import Language from './assets/Language';
+import Language from './components/Language';
 export default function App() {
 
   const [todos,setTodos] = useState([
