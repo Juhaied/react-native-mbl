@@ -49,8 +49,13 @@ export default function App() {
         </View>
         <View style={{ marginTop: -30 }}>
           <Second title="Select cleaner language" />
+          <Language />
         </View>
-        <Language />
+        <View style={{ marginTop: -50 }}>
+          <Second title="Need Cleaning materials?" style={{ fontSize: 14 }} />
+        </View>
+
+       
       </View>
     </ScrollView>
    

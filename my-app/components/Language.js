@@ -9,7 +9,6 @@ const Language = () => {
     'English',
     'Arabic',
     'Hindi',
-   
   ];
 
   const handleLanguageChange = (language) => {
@@ -30,7 +29,8 @@ const Language = () => {
           ))}
         </Picker>
       </View>
-     
+      {/* Add a line at the bottom */}
+      <View style={styles.bottomLine} />
     </View>
   );
 };
@@ -47,21 +47,27 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   label: {
-    fontSize:22,
+    fontSize: 22,
     marginRight: -10,
   },
   picker: {
-    width: '60%', // Adjust the width as needed
+    width: '60%',
     height: 40,
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 5,
-    marginLeft:40,
+    marginLeft: 40,
   },
   selectedLanguage: {
     marginTop: 20,
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  bottomLine: {
+    borderBottomWidth: 1,
+    borderColor: 'gray', // You can change the color as needed
+    width: '90%', // Adjust the width as needed
+    marginBottom: 20, // Adjust the margin as needed
   },
 });
 
