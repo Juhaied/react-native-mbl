@@ -43,6 +43,11 @@ export default function App() {
   return (
     <ScrollView>
       <View style={styles.container}>
+        <Practice2 />
+        <OptionComponent />
+        <Select />
+        <Continue />
+        {/* 
         <Second head="Select Hour" title="How many hours do you need?" />
         <SevenBoxes />
         <View style={{ marginTop: -30 }}>
@@ -66,6 +71,7 @@ export default function App() {
         </View>
         
         <Continue />    
+        */}
       </View>
     </ScrollView>
    
