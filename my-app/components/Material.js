@@ -18,16 +18,14 @@ const Material = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity
-        style={[styles.box1, box1Selected && styles.selectedBox]}
+        style={[styles.box, box1Selected ? styles.selectedBox : styles.unselectedBox]}
         onPress={handleBox1Press}
       >
         <Text style={styles.boxText}>No, I have them</Text>
       </TouchableOpacity>
-      
-      
 
       <TouchableOpacity
-        style={[styles.box2, box2Selected && styles.selectedBox]}
+        style={[styles.box, box2Selected ? styles.selectedBox : styles.unselectedBox]}
         onPress={handleBox2Press}
       >
         <Text style={styles.boxText}>Yes please</Text>
@@ -43,32 +41,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 20,
   },
-  box1: {
-    width: 150, // Adjust the width as needed
+  box: {
+    flex: 1, // Use flex to distribute available space evenly
     height: 40,
-    backgroundColor: 'lightgray',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 5, // Add border radius for rounded corners
-    marginLeft:38,
-  },
-  box2: {
-    width: 150, // Adjust the width as needed
-    height: 40,
-    backgroundColor: 'lightgray',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 5, // Add border radius for rounded corners
-    marginRight:38,
+    borderRadius: 5,
+    marginLeft: 20, 
+    marginRight: 20, 
   },
   selectedBox: {
-    backgroundColor: '#40e0d0', // Change this color as desired
+    backgroundColor: '#40e0d0',
   },
-  
+  unselectedBox: {
+    backgroundColor: '#f8f8ff',
+  },
   boxText: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: 'white', // Text color
+    color: 'white',
   },
 });
 
