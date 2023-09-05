@@ -6,6 +6,9 @@ const Pricing = ({ price }) => {
   const priceAed = "AED";
   return (
     <View style={styles.container}>
+      <View>
+        <Text>*Incloding 5% vat</Text>
+      </View>
       <View style={styles.box}>
         <Text style={styles.priceText}>{pricingText}</Text>
         <Text style={styles.priceValue}>{price}</Text>
