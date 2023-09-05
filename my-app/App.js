@@ -56,8 +56,16 @@ export default function App() {
         <View style={{ marginTop: -50 }}>
           <Second title="Need Cleaning materials?" style={{ fontSize: 14 }} />
         </View>
-        <Material />
-        <Pricing price={150} />       
+        
+        <View style={{ marginBottom: 30 }}>
+          <Material />   
+        </View>
+        
+        <View style={{ marginBottom: 80 }}>
+          <Pricing price={150} />   
+        </View>
+        
+        <Continue />    
       </View>
     </ScrollView>
    
