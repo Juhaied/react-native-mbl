@@ -14,7 +14,7 @@ const Person = () => {
 
   const renderBox = (boxNumber) => {
     if (boxNumber <= 4) {
-      const boxBackgroundColor = isBoxSelected(boxNumber) ? '#00ffff' : '#f8f8ff';
+      const boxBackgroundColor = isBoxSelected(boxNumber) ? '#40e0d0' : '#f8f8ff';
 
       return (
         <View style={styles.boxContainer} key={boxNumber}>

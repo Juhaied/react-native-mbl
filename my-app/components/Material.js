@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     marginRight:38,
   },
   selectedBox: {
-    backgroundColor: '#00ffff', // Change this color as desired
+    backgroundColor: '#40e0d0', // Change this color as desired
   },
   
   boxText: {
