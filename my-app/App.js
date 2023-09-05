@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Header from './components/Header';
 import TodoItem from './components/TodoItem';
 import AddTodo from './components/AddTodo';
-import Practice from './components/Practice';
 import HeaderComponent from './components/HeaderComponent';
 import OptionComponent from './components/OptionComponent';
 import Select from './components/Select';
@@ -16,6 +15,7 @@ import Person from './components/Person';
 import Language from './components/Language';
 import Material from './components/Material';
 import Pricing from './components/Pricing';
+import Prac from './components/Prac';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -44,7 +44,7 @@ export default function App() {
     <ScrollView>
       <View style={styles.container}>
         <Practice2 />
-        <OptionComponent />
+        <Prac />
         <Select />
         <Continue />
         {/* 
