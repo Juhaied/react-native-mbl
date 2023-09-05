@@ -17,6 +17,7 @@ export default function Practice2() {
           placeholderTextColor="#999"
           value={buildingName}
           onChangeText={(text) => setBuildingName(text)}
+          textAlign="right"
         />
         <TextInput
           style={styles.input}
@@ -24,6 +25,7 @@ export default function Practice2() {
           placeholderTextColor="#999"
           value={apartmentNo}
           onChangeText={(text) => setApartmentNo(text)}
+          textAlign="right"
         />
         <TextInput
           style={styles.input}
@@ -31,6 +33,7 @@ export default function Practice2() {
           placeholderTextColor="#999"
           value={state}
           onChangeText={(text) => setState(text)}
+          textAlign="right"
         />
         <TextInput
           style={styles.input}
@@ -38,9 +41,9 @@ export default function Practice2() {
           placeholderTextColor="#999"
           value={contact}
           onChangeText={(text) => setContact(text)}
+          textAlign="right"
         />
       </View>
-      
     </View>
   );
 }
@@ -65,6 +68,5 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 10,
     marginBottom: 10,
-    textAlign: 'right', // Align text to the right
   },
 });
