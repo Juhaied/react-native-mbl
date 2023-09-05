@@ -15,6 +15,7 @@ import Second from './components/Second';
 import Person from './components/Person';
 import Language from './components/Language';
 import Material from './components/Material';
+import Pricing from './components/Pricing';
 export default function App() {
 
   const [todos,setTodos] = useState([
@@ -56,8 +57,7 @@ export default function App() {
           <Second title="Need Cleaning materials?" style={{ fontSize: 14 }} />
         </View>
         <Material />
-
-       
+        <Pricing price={150} />       
       </View>
     </ScrollView>
    
