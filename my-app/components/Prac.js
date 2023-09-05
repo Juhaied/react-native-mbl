@@ -79,9 +79,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
   },
-  selectedOption: {
-    // Any styling for selected options
-  },
+ 
   optionTextContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -99,11 +97,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginRight: 10,
+    backgroundColor:'white'
   },
   innerRadio: {
-    width: 5, // Smaller inner circle
-    height: 5, // Smaller inner circle
-    borderRadius: 5, // Smaller inner circle
+    width: 7, 
+    height: 7, 
+    borderRadius: 5, 
     backgroundColor: 'blue', // Color for the selected radio button
   },
 });
