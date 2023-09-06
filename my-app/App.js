@@ -17,6 +17,8 @@ import Material from './components/Material';
 import Pricing from './components/Pricing';
 import Prac from './components/Prac';
 import PaymentOption from './payment/PaymentOption';
+import Input from './payment/Input';
+import Confirm from './payment/Confirm';
 export default function App() {
 
 
@@ -35,6 +37,10 @@ export default function App() {
           // Handle payment option selection
         }}
       />
+
+      <Input />
+      <Confirm />
+      
 
         {/* 
         <Practice2 />
