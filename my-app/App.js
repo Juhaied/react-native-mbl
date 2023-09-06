@@ -29,7 +29,6 @@ export default function App() {
       <View style={styles.container}>
       <PaymentOption
         option={{
-          cardType: 'Visa',
           cardNumber: 'X X X X  X X X X  X X X X  X X X X',
           expiry: '12/24',
         }}
