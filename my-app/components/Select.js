@@ -26,7 +26,7 @@ export default function Select() {
             style={[
               styles.genderBox,
               selectedGender === gender.id && styles.selectedGender,
-              index !== 0 && { marginLeft: 20 }, // Add a left margin to create a gap
+              index !== 0 && { marginLeft: 20 }, 
             ]}
             onPress={() => handleGenderSelect(gender.id)}
           >
@@ -69,10 +69,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 2,
     borderColor: '#ccc',
-    borderRadius: 10, // Increase the border radius for larger boxes
+    borderRadius: 10, 
     padding: 20,
-    minWidth: 110, // Minimum width for each box
-    flexDirection: 'column', // Stack content vertically
+    minWidth: 110, 
+    flexDirection: 'column', 
   },
   radioButton: {
     width: 20,

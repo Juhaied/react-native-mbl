@@ -16,38 +16,34 @@ import Language from './components/Language';
 import Material from './components/Material';
 import Pricing from './components/Pricing';
 import Prac from './components/Prac';
+import PaymentOption from './payment/PaymentOption';
 export default function App() {
 
-  const [todos,setTodos] = useState([
-    {text: ' buy coffe' , key:'1'},
-    {text: ' create an app' , key:'2'},
-    {text: ' play coc' , key:'3'},
-  ]);
 
-  const pressHandler = (key) =>{
-    setTodos((prevTodos) =>{
-      return prevTodos.filter(todo =>todo.key != key)
-    })
-  }
-
-  const submitHandler = (text) =>{
-    setTodos((prevTodos)=>{
-      return[
-        {text:text, key : Math.random().toString()},
-        ...prevTodos
-      ]
-    })
-  }
-  
+ 
   
   return (
     <ScrollView>
       <View style={styles.container}>
+      <PaymentOption
+        option={{
+          cardType: 'Visa',
+          cardNumber: 'X X X X  X X X X  X X X X  X X X X',
+          expiry: '12/24',
+        }}
+        onPress={() => {
+          // Handle payment option selection
+        }}
+      />
+
+        {/* 
         <Practice2 />
         <Prac />
         <Select />
         <Continue />
-        {/* 
+        */}
+{/*
+        
         <Second head="Select Hour" title="How many hours do you need?" />
         <SevenBoxes />
         <View style={{ marginTop: -30 }}>
@@ -71,7 +67,8 @@ export default function App() {
         </View>
         
         <Continue />    
-        */}
+  */}
+        
       </View>
     </ScrollView>
    

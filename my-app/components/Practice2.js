@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 10,
     marginBottom: 10,
-    textAlign: 'right', // Align text to the right
-    paddingLeft: 10, // Add left padding to move the placeholder text inside the input box
+    textAlign: 'right', 
+    paddingLeft: 10,
   },
 });

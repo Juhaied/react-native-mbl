@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const Second= ({head,title,style}) => {
+const Second = ({ head, title, style }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>{head}</Text>
@@ -13,20 +13,20 @@ const Second= ({head,title,style}) => {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-     // Change the background color as desired
+   
   },
   header: {
-    textAlign:'center',
+    textAlign: 'center',
     fontSize: 24,
-    color: 'black', // Change the text color as desired
-    fontWeight: 'bold',
+    color: 'black', 
+    
   },
   question: {
-    marginLeft:12,
+    marginLeft: 12,
     fontSize: 26,
-    color: 'black', // Change the text color as desired
+    color: 'black', 
     marginTop: 10,
-    fontWeight: 'bold',
+  
   },
 });
 

@@ -10,19 +10,19 @@ export default function Continue(){
 const styles = StyleSheet.create({
     container: {
       flex:1,
-      width: 200, // Adjust the width as needed
-      height: 50, // Adjust the height as needed
+      width: 200, 
+      height: 50, 
       marginLeft:100,
-      backgroundColor: '#40e0d0', // Background color
-      borderRadius: 28, // Rounded corners
+      backgroundColor: '#40e0d0', 
+      borderRadius: 28, 
       alignItems: 'center',
       justifyContent: 'center',
       alignContent:'center'
     },
     text: {
-      color: 'white', // Text color
-      fontSize: 18, // Text size
-      fontWeight: 'bold', // Text weight
+      color: 'white', 
+      fontSize: 18, 
+      fontWeight: 'bold', 
       textAlign:'center',
     },
   });
